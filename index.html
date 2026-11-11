@@ -1,143 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta name="google-site-verification" content="SFjildHLtfAs-ely0GNsV9mfuycAGzPAZ6RG5wy3Wz4" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guy Bertrand Akimana (GuyByte) — Étudiant BTP & Développeur en devenir</title>
-<meta name="description" content="Portfolio de Guy Bertrand Akimana, étudiant en Construction/BTP à l'Université du Burundi, en apprentissage de Python, HTML et CSS.">
-
-<!-- Open Graph pour un bel aperçu sur Facebook / LinkedIn -->
-<meta property="og:title" content="Guy Bertrand Akimana — Portfolio">
-<meta property="og:description" content="Étudiant en BTP au Burundi, en apprentissage de Python, HTML et CSS. Découvrez mes compétences et projets.">
-<meta property="og:type" content="website">
-
-<style>
-  :root {
-    --bg: #0f172a;
-    --bg-light: #1e293b;
-    --accent: #38bdf8;
-    --text: #e2e8f0;
-    --text-dim: #94a3b8;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-  }
-  header {
-    padding: 4rem 1.5rem 3rem;
-    text-align: center;
-    background: linear-gradient(180deg, var(--bg-light), var(--bg));
-  }
-  header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.3rem;
-  }
-  header .pseudo {
-    color: var(--accent);
-    font-weight: 600;
-  }
-  header p.tagline {
-    color: var(--text-dim);
-    margin-top: 0.8rem;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  section {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 2.5rem 1.5rem;
-  }
-  section h2 {
-    color: var(--accent);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid var(--bg-light);
-    padding-bottom: 0.5rem;
-  }
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-  }
-  .skills span {
-    background: var(--bg-light);
-    padding: 0.4rem 0.9rem;
-    border-radius: 999px;
-    font-size: 0.9rem;
-  }
-  .project {
-    background: var(--bg-light);
-    border-radius: 10px;
-    padding: 1.2rem 1.4rem;
-  }
-  .project h3 {
-    color: var(--text);
-    margin-bottom: 0.5rem;
-  }
-  .project p {
-    color: var(--text-dim);
-    font-size: 0.95rem;
-  }
-  footer {
-    text-align: center;
-    padding: 2.5rem 1.5rem;
-    color: var(--text-dim);
-    font-size: 0.9rem;
-  }
-  footer a {
-    color: var(--accent);
-    text-decoration: none;
-  }
-  footer a:hover {
-    text-decoration: underline;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GuyByte — portfolio, services numériques et laboratoire d'innovation de Guy Bertrand Akimana.">
+  <meta name="theme-color" content="#0b1220">
+  <title>GuyByte | Technologie, développement et innovation</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="GuyByte, accueil"><span class="brand-mark">G</span> GuyByte<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#profil">Profil</a>
+      <a href="#services">Services</a>
+      <a href="#lab">Laboratoire</a>
+      <a href="#contact" class="nav-cta">Me contacter</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>Guy Bertrand Akimana</h1>
-  <p class="pseudo">alias GuyByte</p>
-  <p class="tagline">Étudiant en Construction / Bâtiment et Travaux Publics à l'Université du Burundi, en apprentissage de Python, HTML et CSS.</p>
-</header>
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">PORTFOLIO · SERVICES NUMÉRIQUES · INNOVATION</p>
+        <h1>Des idées concrètes.<br><span>Des solutions numériques.</span></h1>
+        <p class="hero-text">Je suis Guy Bertrand Akimana, alias GuyByte. Étudiant en BTP et apprenant développeur, je construis des outils numériques qui répondent à des problèmes réels.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#lab">Découvrir mes projets</a>
+          <a class="button button-secondary" href="#contact">Parler d'un projet</a>
+        </div>
+        <p class="availability"><span class="status-dot"></span> Ouvert aux collaborations et petits projets</p>
+      </div>
+      <div class="hero-card" aria-label="Domaines de travail">
+        <div class="code-top"><i></i><i></i><i></i><span>guybyte.dev</span></div>
+        <div class="code-lines">
+          <p><span class="code-purple">const</span> <span class="code-blue">guyByte</span> = {</p>
+          <p class="indent">curiosité: <span class="code-green">"élevée"</span>,</p>
+          <p class="indent">domaines: [</p>
+          <p class="indent2"><span class="code-green">"Développement"</span>,</p>
+          <p class="indent2"><span class="code-green">"Automatisation"</span>,</p>
+          <p class="indent2"><span class="code-green">"BTP & IA"</span></p>
+          <p class="indent">]</p>
+          <p>};</p>
+        </div>
+        <div class="hero-card-foot">APPRENDRE <span>→</span> CONSTRUIRE <span>→</span> AMÉLIORER</div>
+      </div>
+    </section>
 
-<section>
-  <h2>À propos</h2>
-  <p>Je suis étudiant en BTP (Bâtiment et Travaux Publics) à l'Université du Burundi. En parallèle de mes études, j'apprends la programmation — Python, HTML et CSS — pour développer de nouvelles compétences numériques et créer des outils utiles.</p>
-</section>
+    <section class="section about" id="profil">
+      <div class="section-heading">
+        <p class="eyebrow">01 / PROFIL</p>
+        <h2>Qui suis-je ?</h2>
+      </div>
+      <div class="about-copy">
+        <p>Je suis étudiant en Bâtiment et Travaux Publics à l'Université du Burundi. En parallèle de mes études, j'apprends la programmation et les technologies numériques pour développer des solutions utiles, notamment à l'intersection du génie civil et de l'informatique.</p>
+        <div class="skill-list">
+          <span>HTML</span><span>CSS</span><span>Python — apprentissage</span>
+          <span>Logique & algorithmique</span><span>BTP</span><span>Résolution de problèmes</span>
+        </div>
+        <p class="small-note">Les compétences indiquées reflètent mon parcours actuel. Cette page sera mise à jour au fur et à mesure de mes réalisations.</p>
+      </div>
+    </section>
 
-<section>
-  <h2>Compétences</h2>
-  <div class="skills">
-    <span>Python</span>
-    <span>Structures de contrôle (conditions, boucles)</span>
-    <span>Fonctions</span>
-    <span>Listes & dictionnaires</span>
-    <span>Fichiers (lecture/écriture)</span>
-    <span>Programmation orientée objet</span>
-    <span>Héritage</span>
-    <span>Gestion des erreurs</span>
-    <span>HTML</span>
-    <span>CSS</span>
-  </div>
-</section>
+    <section class="section services-section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">02 / GUYBYTE TECHNOLOGIES</p>
+        <h2>Services numériques</h2>
+        <p class="section-intro">Des prestations simples et adaptées aux besoins des étudiants, commerçants, indépendants et petites organisations.</p>
+      </div>
+      <div class="card-grid">
+        <article class="info-card">
+          <div class="card-number">01</div><h3>Sites web vitrines</h3>
+          <p>Création de pages web claires pour présenter une activité, des produits ou des coordonnées.</p>
+          <span class="tag">HTML · CSS · GitHub Pages</span>
+        </article>
+        <article class="info-card">
+          <div class="card-number">02</div><h3>Documents & outils bureautiques</h3>
+          <p>Mise en page de documents et création de petits tableaux de suivi adaptés à un besoin précis.</p>
+          <span class="tag">Word · Excel · WPS Office</span>
+        </article>
+        <article class="info-card">
+          <div class="card-number">03</div><h3>Petites automatisations</h3>
+          <p>Étude et réalisation de scripts simples pour réduire les tâches répétitives.</p>
+          <span class="tag">Python · selon le besoin</span>
+        </article>
+      </div>
+      <p class="disclaimer">Chaque demande est évaluée avant acceptation. Les prestations sont limitées aux fonctionnalités que je peux réellement réaliser et tester.</p>
+    </section>
 
-<section>
-  <h2>Projet</h2>
-  <div class="project">
-    <h3>Programme de gestion de notes</h3>
-    <p>Application en Python gérant les notes de plusieurs étudiants : ajout d'élèves, saisie des notes, calcul de moyennes, combinant fonctions, listes, dictionnaires et boucles.</p>
-  </div>
-</section>
+    <section class="section lab-section" id="lab">
+      <div class="section-heading">
+        <p class="eyebrow">03 / GUYBYTE LAB</p>
+        <h2>Projets & expérimentations</h2>
+        <p class="section-intro">Un espace pour apprendre en construisant, tester des idées et publier des outils progressivement.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-label">PROJET EN DÉVELOPPEMENT</div>
+          <h3>CivAI</h3>
+          <p>Concept d'assistant destiné à accompagner les calculs et explications techniques en BTP : mécanique, résistance des matériaux et analyse de structures.</p>
+          <span class="project-status">Prototype / apprentissage</span>
+        </article>
+        <article class="project-card">
+          <div class="project-label">PYTHON</div>
+          <h3>Gestion de notes</h3>
+          <p>Programme d'exercice pour enregistrer des étudiants, saisir des notes et calculer des moyennes.</p>
+          <span class="project-status">Projet d'apprentissage</span>
+        </article>
+        <article class="project-card">
+          <div class="project-label">À EXPLORER</div>
+          <h3>Cybersécurité & IA</h3>
+          <p>Apprentissage des réseaux, de la sécurité informatique et des outils d'intelligence artificielle dans un cadre légal et pratique.</p>
+          <span class="project-status">Domaine d'exploration</span>
+        </article>
+      </div>
+    </section>
 
-<footer>
-  <p>Contact : <a href="mailto:guybertrandakimana3@gmail.com">guybertrandakimana3@gmail.com</a></p>
-</footer>
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">04 / CONTACT</p>
+        <h2>Tu as une idée ou un besoin numérique ?</h2>
+        <p>Présente-moi ton projet. Nous pourrons discuter du besoin, du délai et de la solution réaliste à construire.</p>
+      </div>
+      <a class="button button-primary" href="mailto:guybertrandakimana3@gmail.com?subject=Demande%20de%20renseignement%20-%20GuyByte">Écrire à GuyByte</a>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <a class="brand" href="#accueil"><span class="brand-mark">G</span> GuyByte<span class="brand-dot">.</span></a>
+    <p>Construire des compétences. Créer des solutions. Progresser.</p>
+    <p class="copyright">© <span id="year"></span> GuyByte · Burundi</p>
+  </footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
+                                                                        
