@@ -1,138 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="GuyByte — portfolio, services numériques et laboratoire d'innovation de Guy Bertrand Akimana.">
-  <meta name="theme-color" content="#0b1220">
-  <title>GuyByte05 | Technologie, développement et innovation</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GuyByte05 — Technologie & Innovation</title>
+<style>
+:root{--bg:#071426;--panel:#0d2038;--text:#edf5ff;--muted:#a9bad0;--cyan:#42d7e8;--line:#1c3857}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 80% 0%,#12375a 0,transparent 34%),var(--bg);color:var(--text);line-height:1.6}
+.wrap{width:min(1080px,90%);margin:auto}.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-size:1.35rem;font-weight:800;letter-spacing:.4px}.brand span{color:var(--cyan)}nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:.92rem}nav a:hover{color:var(--cyan)}
+.hero{padding:86px 0 74px;display:grid;grid-template-columns:1.35fr .85fr;gap:42px;align-items:center}.tag{color:var(--cyan);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.05;margin:15px 0 20px}h1 span{color:var(--cyan)}.lead{font-size:1.12rem;color:var(--muted);max-width:650px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.btn{padding:12px 19px;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid var(--cyan);color:var(--text)}.btn.primary{background:var(--cyan);color:#062033}.visual{background:linear-gradient(145deg,#12385a,#0b1b30);border:1px solid #285071;border-radius:20px;padding:26px;box-shadow:0 25px 65px #0005}.orb{height:190px;border-radius:15px;background:radial-gradient(circle at 50% 45%,#42d7e866,transparent 32%),linear-gradient(135deg,#102b47,#071426);display:grid;place-items:center;font-size:4rem;color:var(--cyan)}.visual small{color:var(--cyan);letter-spacing:1.5px}.visual h3{margin:8px 0}.visual p{color:var(--muted);margin-bottom:0}
+section{padding:55px 0}.section-title{font-size:2rem;margin:0 0 8px}.sub{color:var(--muted);margin:0 0 28px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(150deg,#102741,#0b1b30);border:1px solid var(--line);border-radius:14px;padding:22px}.icon{font-size:1.7rem}.card h3{margin:12px 0 7px}.card p{color:var(--muted);margin:0}.chips{display:flex;flex-wrap:wrap;gap:10px}.chip{border:1px solid #285071;background:#0d2038;border-radius:30px;padding:8px 14px;color:#cce7f4;font-size:.9rem}.contact{background:linear-gradient(120deg,#103453,#0b1b30);border:1px solid #285071;border-radius:18px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:20px}.contact p{color:var(--muted);margin-bottom:0}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem;margin-top:40px}
+@media(max-width:760px){.top{align-items:flex-start;gap:15px;flex-direction:column}nav a{margin:0 14px 0 0}.hero{grid-template-columns:1fr;padding:55px 0}.grid{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#accueil" aria-label="GuyByte05, accueil"><span class="brand-mark">G</span> GuyByte05<span class="brand-dot">.</span></a>
-    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    <nav class="nav" id="nav">
-      <a href="#profil">Profil</a>
-      <a href="#services">Services</a>
-      <a href="#lab">Laboratoire</a>
-      <a href="#contact" class="nav-cta">Me contacter</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="accueil">
-      <div class="hero-content">
-        <p class="eyebrow">PORTFOLIO · SERVICES NUMÉRIQUES · INNOVATION</p>
-        <h1>Des idées concrètes.<br><span>Des solutions numériques.</span></h1>
-        <p class="hero-text">Je suis Guy Bertrand Akimana, alias GuyByte05. Étudiant en BTP et apprenant développeur, je construis des outils numériques qui répondent à des problèmes réels.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#lab">Découvrir mes projets</a>
-          <a class="button button-secondary" href="#contact">Parler d'un projet</a>
-        </div>
-        <p class="availability"><span class="status-dot"></span> Ouvert aux collaborations et petits projets</p>
-      </div>
-      <div class="hero-card" aria-label="Domaines de travail">
-        <div class="code-top"><i></i><i></i><i></i><span>guybyte05.dev</span></div>
-        <div class="code-lines">
-          <p><span class="code-purple">const</span> <span class="code-blue">guyByte05</span> = {</p>
-          <p class="indent">curiosité: <span class="code-green">"élevée"</span>,</p>
-          <p class="indent">domaines: [</p>
-          <p class="indent2"><span class="code-green">"Développement"</span>,</p>
-          <p class="indent2"><span class="code-green">"Automatisation"</span>,</p>
-          <p class="indent2"><span class="code-green">"BTP & IA"</span></p>
-          <p class="indent">]</p>
-          <p>};</p>
-        </div>
-        <div class="hero-card-foot">APPRENDRE <span>→</span> CONSTRUIRE <span>→</span> AMÉLIORER</div>
-      </div>
-    </section>
-
-    <section class="section about" id="profil">
-      <div class="section-heading">
-        <p class="eyebrow">01 / PROFIL</p>
-        <h2>Qui suis-je ?</h2>
-      </div>
-      <div class="about-copy">
-        <p>Je suis étudiant en Bâtiment et Travaux Publics à l'Université du Burundi. En parallèle de mes études, j'apprends la programmation et les technologies numériques pour développer des solutions utiles, notamment à l'intersection du génie civil et de l'informatique.</p>
-        <div class="skill-list">
-          <span>HTML</span><span>CSS</span><span>Python — apprentissage</span>
-          <span>Logique & algorithmique</span><span>BTP</span><span>Résolution de problèmes</span>
-        </div>
-        <p class="small-note">Les compétences indiquées reflètent mon parcours actuel. Cette page sera mise à jour au fur et à mesure de mes réalisations.</p>
-      </div>
-    </section>
-
-    <section class="section services-section" id="services">
-      <div class="section-heading">
-        <p class="eyebrow">02 / GUYBYTE05 TECHNOLOGIES</p>
-        <h2>Services numériques</h2>
-        <p class="section-intro">Des prestations simples et adaptées aux besoins des étudiants, commerçants, indépendants et petites organisations.</p>
-      </div>
-      <div class="card-grid">
-        <article class="info-card">
-          <div class="card-number">01</div><h3>Sites web vitrines</h3>
-          <p>Création de pages web claires pour présenter une activité, des produits ou des coordonnées.</p>
-          <span class="tag">HTML · CSS · GitHub Pages</span>
-        </article>
-        <article class="info-card">
-          <div class="card-number">02</div><h3>Documents & outils bureautiques</h3>
-          <p>Mise en page de documents et création de petits tableaux de suivi adaptés à un besoin précis.</p>
-          <span class="tag">Word · Excel · WPS Office</span>
-        </article>
-        <article class="info-card">
-          <div class="card-number">03</div><h3>Petites automatisations</h3>
-          <p>Étude et réalisation de scripts simples pour réduire les tâches répétitives.</p>
-          <span class="tag">Python · selon le besoin</span>
-        </article>
-      </div>
-      <p class="disclaimer">Chaque demande est évaluée avant acceptation. Les prestations sont limitées aux fonctionnalités que je peux réellement réaliser et tester.</p>
-    </section>
-
-    <section class="section lab-section" id="lab">
-      <div class="section-heading">
-        <p class="eyebrow">03 / GUYBYTE05 LAB</p>
-        <h2>Projets & expérimentations</h2>
-        <p class="section-intro">Un espace pour apprendre en construisant, tester des idées et publier des outils progressivement.</p>
-      </div>
-      <div class="project-grid">
-        <article class="project-card featured">
-          <div class="project-label">PROJET EN DÉVELOPPEMENT</div>
-          <h3>CivAI</h3>
-          <p>Concept d'assistant destiné à accompagner les calculs et explications techniques en BTP : mécanique, résistance des matériaux et analyse de structures.</p>
-          <span class="project-status">Prototype / apprentissage</span>
-        </article>
-        <article class="project-card">
-          <div class="project-label">PYTHON</div>
-          <h3>Gestion de notes</h3>
-          <p>Programme d'exercice pour enregistrer des étudiants, saisir des notes et calculer des moyennes.</p>
-          <span class="project-status">Projet d'apprentissage</span>
-        </article>
-        <article class="project-card">
-          <div class="project-label">À EXPLORER</div>
-          <h3>Cybersécurité & IA</h3>
-          <p>Apprentissage des réseaux, de la sécurité informatique et des outils d'intelligence artificielle dans un cadre légal et pratique.</p>
-          <span class="project-status">Domaine d'exploration</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div>
-        <p class="eyebrow">04 / CONTACT</p>
-        <h2>Tu as une idée ou un besoin numérique ?</h2>
-        <p>Présente-moi ton projet. Nous pourrons discuter du besoin, du délai et de la solution réaliste à construire.</p>
-      </div>
-      <a class="button button-primary" href="mailto:guybertrandakimana3@gmail.com?subject=Demande%20de%20renseignement%20-%20GuyByte">Écrire à GuyByte</a>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <a class="brand" href="#accueil"><span class="brand-mark">G</span> GuyByte<span class="brand-dot">.</span></a>
-    <p>Construire des compétences. Créer des solutions. Progresser.</p>
-    <p class="copyright">© <span id="year"></span> GuyByte · Burundi</p>
-  </footer>
-  <script src="assets/js/main.js"></script>
+<header class="wrap top">
+  <div class="brand">GuyByte<span>05</span></div>
+  <nav><a href="#apropos">À propos</a><a href="#services">Services</a><a href="#lab">Laboratoire</a><a href="#contact">Contact</a></nav>
+</header>
+<main class="wrap">
+  <section class="hero" id="apropos">
+    <div>
+      <div class="tag">Technologie · Ingénierie · Innovation</div>
+      <h1>Construire des idées.<br><span>Créer des solutions.</span></h1>
+      <p class="lead">Bienvenue chez GuyByte05 : un espace consacré au développement numérique, aux outils technologiques et aux solutions pratiques pour les défis du quotidien.</p>
+      <div class="actions"><a class="btn primary" href="#services">Découvrir les services</a><a class="btn" href="#lab">Explorer le laboratoire</a></div>
+    </div>
+    <aside class="visual"><div class="orb">⌘</div><small>GUYBYTE05 / LAB</small><h3>Apprendre. Concevoir. Innover.</h3><p>Des projets en évolution, construits étape par étape.</p></aside>
+  </section>
+  <section id="services">
+    <h2 class="section-title">Services technologiques</h2><p class="sub">Des prestations simples, utiles et accessibles.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">🌐</div><h3>Création de sites web</h3><p>Sites vitrines et pages web pour petites entreprises, associations et projets personnels.</p></article>
+      <article class="card"><div class="icon">⚙️</div><h3>Automatisation</h3><p>Petits scripts et outils pour simplifier des tâches répétitives et organiser les données.</p></article>
+      <article class="card"><div class="icon">📊</div><h3>Outils numériques</h3><p>Mise en forme de documents, tableaux de suivi et solutions numériques de base.</p></article>
+    </div>
+  </section>
+  <section id="lab">
+    <h2 class="section-title">GuyByte05 Lab</h2><p class="sub">Un atelier d'expérimentation et d'apprentissage.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">🏗️</div><h3>CivAI</h3><p>Projet en développement : assistant d'étude pour les calculs et raisonnements en génie civil.</p></article>
+      <article class="card"><div class="icon">💻</div><h3>Programmation</h3><p>Exercices et prototypes en HTML, CSS, JavaScript et Python.</p></article>
+      <article class="card"><div class="icon">🔐</div><h3>Cyber & réseaux</h3><p>Apprentissage des réseaux et de la cybersécurité dans un cadre légal et pédagogique.</p></article>
+    </div>
+  </section>
+  <section>
+    <h2 class="section-title">Compétences en développement</h2><p class="sub">Compétences et domaines d'apprentissage présentés honnêtement.</p>
+    <div class="chips"><span class="chip">HTML & CSS</span><span class="chip">JavaScript — apprentissage</span><span class="chip">Python — apprentissage</span><span class="chip">Génie civil / BTP</span><span class="chip">Résolution de problèmes</span><span class="chip">Outils numériques</span></div>
+  </section>
+  <section id="contact">
+    <div class="contact"><div><h2 class="section-title">Un projet en tête ?</h2><p>Contactez GuyByte05 pour discuter d'une idée ou d'un besoin numérique.</p></div><a class="btn primary" href="mailto:REMPLACEZ_PAR_VOTRE_EMAIL">Me contacter</a></div>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 GuyByte05 · Technologie & Innovation</div></footer>
 </body>
 </html>
-                                                                        
